@@ -38,7 +38,7 @@ class Parser {
 
 public:
 	Parser(Lexer &lex): lex(lex), has_error(false) { advance(); }
-	bool has_error() { return has_error; }
+	bool hasError() { return has_error; }
 	Ast* parse();
 };
 

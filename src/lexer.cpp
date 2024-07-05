@@ -36,7 +36,7 @@ void Lexer::next(Token &token) {
 		formToken(token, end, Token::number);
 	} else {
 		switch (*buffer_ptr) {
-			#define CASE(ch, tok) \ 
+			#define CASE(ch, tok) \
 			case ch: formToken(token, buffer_ptr + 1, tok); break;
 			CASE('+', Token::plus);
 			CASE('-', Token::minus);
